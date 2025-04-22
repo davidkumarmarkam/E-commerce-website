@@ -66,7 +66,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 
 	</head>
     <body class="cnt-home">
-		<h1>My first e commerce website</h1>
+		
 	
 		
 	
