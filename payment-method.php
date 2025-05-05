@@ -91,11 +91,11 @@ else{
 
 		<!-- panel-body  -->
 	    <div class="panel-body">
-	    <form name="payment" method="post">
+	    <form  method="post">
 	    <input type="radio" name="paymethod" value="COD" checked="checked"> COD
 	     <input type="radio" name="paymethod" value="Internet Banking"> Internet Banking
 	     <input type="radio" name="paymethod" value="Debit / Credit card"> Debit / Credit card <br /><br />
-	     <input type="submit" value="submit" name="submit" class="btn btn-primary">
+	     <input type="button" value="submit" onclick="pay_now()" name="submit" class="btn btn-primary">
 	    	
 
 	    </form>		
@@ -133,6 +133,7 @@ else{
 	<script src="assets/js/scripts.js"></script>
 
 	<!-- For demo purposes – can be removed on production -->
+	 
 	
 	<script src="switchstylesheet/switchstylesheet.js"></script>
 	
@@ -151,7 +152,46 @@ else{
 	</script>
 	<!-- For demo purposes – can be removed on production : End -->
 
-	
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Razorpay CDN -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+    <script>
+      
+            function pay_now(){
+                var options = {
+                    "key": "rzp_test_dmVBsdXFFOmxDa", // Enter the Key ID generated from the Dashboard
+                    "amount": "500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise or ₹500.
+                    "currency": "INR",
+                    "name": "Acme Corp",
+                    "description": "Test Transaction",
+                    "image": "https://example.com/your_logo",
+                    "handler": function (response){
+                        alert(response.razorpay_payment_id);
+                    },
+                    "prefill": {
+                        "name": "Gaurav Kumar",
+                        "email": "gaurav.kumar@example.com",
+                        "contact": "9999999999"
+                    },
+                    "notes": {
+                        "address": "Razorpay Corporate Office"
+                    },
+                    "theme": {
+                        "color": "#F37254"
+                    }
+                };
+                var rzp1 = new Razorpay(options);
+                rzp1.open();
+                e.preventDefault();
+            };
+    
+    </script>
+</body>
+</html>
+
 
 </body>
 </html>
