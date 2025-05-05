@@ -16,7 +16,7 @@
     </div><!-- /.footer-logo -->
 
     <div class="module-body m-t-20">
-        <p class="about-us"> Nam libero tempore, cum soluta nobis est ses  eligendi optio cumque cum soluta nobis est ses  eligendi optio cumque.</p>
+        <p class="about-us"> Welcome to [AD COLLECTION], your one-stop online shop for [briefly state your niche or product range e.g., the latest fashion, unique home décor, eco-friendly products, etc.]</p>
 
     </div>
 
@@ -59,7 +59,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <p>New Delhi, Delhi</p>
+                    <p>PENDRA ROAD</p>
                 </div>
             </li>
 
@@ -71,7 +71,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <p>(011) 000000000000<br>(011) 000000000000</p>
+                    <p>+91 7440804023<br>+91 6267629726</p>
                 </div>
             </li>
 
@@ -83,7 +83,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <span><a href="#">test@test.com</a></span>
+                    <span><a href="#">davidkumarkumar4@gmail.com</a></span>
                 </div>
             </li>
               
